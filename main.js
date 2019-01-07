@@ -1,39 +1,36 @@
-
-//======================
-//Google authentication
-//======================
+//==================================================================
+//        Google authentication
+//==================================================================
 
 //Initialize
-// var config = {
-//     apiKey: "AIzaSyBzexAHQM6IMjbC_q3B_z6RF0BKEC_qQWg",
-//     authDomain: "first-gatest-project-fanpage.firebaseapp.com",
-//     databaseURL: "https://first-gatest-project-fanpage.firebaseio.com",
-//     projectId: "first-gatest-project-fanpage",
-//     storageBucket: "first-gatest-project-fanpage.appspot.com",
-//     messagingSenderId: "1069716982485"
-//   };
-//   firebase.initializeApp(config);
+  // var config = {
+  //   apiKey: "AIzaSyA9jz6IhZGukay8PVTOebbweJzpY3FtKuo",
+  //   authDomain: "gafinalproject-bd887.firebaseapp.com",
+  //   databaseURL: "https://gafinalproject-bd887.firebaseio.com",
+  //   projectId: "gafinalproject-bd887",
+  //   storageBucket: "gafinalproject-bd887.appspot.com",
+  //   messagingSenderId: "417993721368"
+  // };
+  // firebase.initializeApp(config);
 
 
 
-//======================
-//LET THEM IN authentication
-//======================
+//==================================================================
+//          LET THEM IN authentication
+//==================================================================
 
 let emailAddress = document.getElementById('inputEmail'),
-    passWord = document.getElementById('inputPassword'),
-    mainButton = document.getElementById('mainButton');
+  passWord = document.getElementById('inputPassword'),
+  mainButton = document.getElementById('mainButton');
 
-mainButton.addEventListener('click', function(e){
+mainButton.addEventListener('click', function (e) {
   e.preventDefault();
-  if(emailAddress.value==='test@test.com' && passWord.value==='test'){
-    //windows.location.asign = 'http://www.yahoo.com';
-    // windows.location.asign('http://www.yahoo.com');
+  if (emailAddress.value === 'test@test.com' && passWord.value === 'test') {
     window.location.href = 'page2.html';
-    console.log(`The value for email was ${emailAddress.value} and password was ${passWord.value}`)
+  } else if(emailAddress.value === ''){
+    window.location.href = 'errorPage.html';
   } else {
-    console.log(`The value for email was ${emailAddress.value} and password was ${passWord.value}`)
+   
   }
   e.preventDefault();
 }, false);
-

@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+  }
+
+body {
+      /* The image used */
+  background-image: url("images/error.jpeg");
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+marquee {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 60px;   
+    background-color: yellow;
+}
