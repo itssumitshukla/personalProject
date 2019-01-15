@@ -2,3 +2,9 @@
 	text-align:center;
 	margin: 0 auto;
 }
+#numCounter {
+	background-color: gold;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+

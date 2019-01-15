@@ -1,153 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Miles INSTAGRAM</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="insta.css" />
-        <!--Bootstrap CDN-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Miles INSTAGRAM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="insta.css" />
+  <!--Bootstrap CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+
 </head>
+
 <body>
-        <!-- This is the nav bar -->
-        <nav class="navbar navbar-light" style="background-color: gold;">
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                      <a class="nav-link" href="/page2.html">Home <i class="fas fa-home"></i></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/doggo_llingo/dogLingo.html">Lingo <i class="fas fa-microphone"></i></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="/instagram_page/instagram.html">Instagram <i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/wiki/wiki.html">WIki <i class="fab fa-wikipedia-w"></i></a>
-                    </li>
-                  </ul>
-                  <a class="navbar-brand"><i class="fas fa-dog"></i> Miles <i class="fas fa-paw"></i></a>
-                  <ul class="nav nav-pills">
-                    <li class="nav-item">
-                      <a class="nav-link btn-danger" href="/index.html">LOGOUT</a>
-                    </li>
-                  </ul>  
-        </nav>
+  <!-- This is the nav bar -->
+  <nav class="navbar navbar-light" style="background-color: gold;">
+    <!-- ad fixed-top after the carousel effect-->
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="/page2.html">Home <i class="fas fa-home"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/doggo_llingo/dogLingo.html">Lingo <i class="fas fa-microphone"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/instagram_page/instagram.html">Instagram <i class="fab fa-instagram"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/wiki/wiki.html">WIki <i class="fab fa-wikipedia-w"></i></a>
+      </li>
+    </ul>
+    <a class="navbar-brand"><i class="fas fa-dog"></i> Miles <i class="fas fa-paw"></i></a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link btn-danger" href="/index.html">LOGOUT</a>
+      </li>
+    </ul>
+  </nav>
 
-         <!-- Stacking Cards -->
-         <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 " data-ride="carousel">
+  <!-- Container main -->
+  <div class="container-fluid">
+    <!-- First row of pics -->
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="/images/snooze1.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text text-center">
+              <span id="numCounter"></span>
+              <button class="btn btn-danger" id="sup"> <i class="fas fa-heart"></i> LIKES <i class="fas fa-heart"></i></button>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="/images/tippy.png" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text text-center">
+                <span id="numCounter"></span>
+                <button class="btn btn-danger" id="sup"> <i class="fas fa-heart"></i> LIKES <i class="fas fa-heart"></i></button>
+            </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="/images/background.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
 
-                <!--Controls-->
-                <div class="controls-top">
-                  <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                  <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-                </div>
-                <!--/.Controls-->
-              
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-multi" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-multi" data-slide-to="2"></li>
-                  <li data-target="#carousel-example-multi" data-slide-to="3"></li>
-                  <li data-target="#carousel-example-multi" data-slide-to="4"></li>
-                  <li data-target="#carousel-example-multi" data-slide-to="5"></li>
-                </ol>
-                <!--/.Indicators-->
-              
-                <div class="carousel-inner" role="listbox">
-              
-                  <div class="carousel-item active">
-                    <div class="col-md-4">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
-                          alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title font-weight-bold">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-4">
-                      <div class="card">
-                        <img src="/images/bamboozled.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Bamboozled</h5>
-                    <p class="card-text">Dog is confused.</p>
-                    </div>
-                </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-4">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
-                          alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title font-weight-bold">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-4">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title font-weight-bold">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-4">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title font-weight-bold">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-4">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title font-weight-bold">Card title</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                          <a class="btn btn-primary btn-md btn-rounded">Button</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              
-                </div>
-              
-              </div>
+    <!-- below div is main container -->
+  </div>
 
-<!--Bootstrap CDN for Javascript-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!--Bootstrap CDN for Javascript-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 
-<!-- My javascript page -->
-<script src="insta.js"></script>
+  <!-- My javascript page -->
+  <script src="insta.js"></script>
 </body>
+
 </html>
