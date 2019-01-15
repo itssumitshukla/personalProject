@@ -1,0 +1,11 @@
+
+.card:hover{
+    -webkit-box-shadow: -22px -19px 0px 5px rgba(250,200,0,1);
+    -moz-box-shadow: -22px -19px 0px 5px rgba(250,200,0,1);
+    box-shadow: -22px -19px 0px 5px rgba(250,200,0,1); 
+}
+
+.mopey{
+    height: 20rem;
+    width: 90px;
+}

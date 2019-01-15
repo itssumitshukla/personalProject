@@ -30,7 +30,7 @@ mainButton.addEventListener('click', function (e) {
   } else if(emailAddress.value === ''){
     window.location.href = 'errorPage.html';
   } else {
-   
+    console.log('ERROR')
   }
   e.preventDefault();
 }, false);
