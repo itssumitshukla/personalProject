@@ -1,22 +1,6 @@
 //==================================================================
-//        Google authentication
 //==================================================================
-
-//Initialize
-  // var config = {
-  //   apiKey: "AIzaSyA9jz6IhZGukay8PVTOebbweJzpY3FtKuo",
-  //   authDomain: "gafinalproject-bd887.firebaseapp.com",
-  //   databaseURL: "https://gafinalproject-bd887.firebaseio.com",
-  //   projectId: "gafinalproject-bd887",
-  //   storageBucket: "gafinalproject-bd887.appspot.com",
-  //   messagingSenderId: "417993721368"
-  // };
-  // firebase.initializeApp(config);
-
-
-
-//==================================================================
-//          LET THEM IN authentication
+//          LET THEM IN 
 //==================================================================
 
 let emailAddress = document.getElementById('inputEmail'),

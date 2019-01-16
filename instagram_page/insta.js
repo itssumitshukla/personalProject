@@ -12,9 +12,9 @@
   //get all the images
 let likeMe = document.querySelectorAll('.card');
 
-likeMe.forEach(function (e) {
-    e.addEventListener('click', function () {
-      count += 1;
-      spanMe.innerHTML = "Likes: " + count;
-    })
-  }
+// likeMe.forEach(function (e) {
+//     e.addEventListener('click', function () {
+//       count += 1;
+//       spanMe.innerHTML = "Likes: " + count;
+//     })
+//   }
