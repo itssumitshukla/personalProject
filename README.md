@@ -1,6 +1,6 @@
-# finalProject
+# personalProject
 
-GA final project
+Personal project
 * 
 ```
 1 Code: Html5, css3, bootstrap, ES6, jquery (minimal)
@@ -9,6 +9,6 @@ GA final project
 ```
 
 ## Unfinished business
-* Website isnt responsive
+* Website isnt as mobile responsive as i would have liked
 * Storage app needs to be reconfigured
-* Webapp auth isnt properly configured and only works with assigned email value
+* Webapp auth isnt properly configured (oath isnt working properly) and only works with assigned email value
